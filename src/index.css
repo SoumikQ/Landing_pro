@@ -2,7 +2,14 @@
 
 @import "tailwindcss";
 
+@custom-variant dark(&:where(.dark, .dark *))
+
 *{
   font-family: "Roboto", serif;
   font-weight: 400;
+}
+
+@theme{
+  --color-primary: rgb(80, 68, 229);
+  /* --color-primary: #5044e5; */
 }
